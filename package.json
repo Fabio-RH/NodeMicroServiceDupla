@@ -1,0 +1,11 @@
+{
+  "name": "node-microservice-dupla",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "product": "npm run dev --workspace=apps/product-service",
+    "order": "npm run dev --workspace=apps/order-service",
+    "gateway": "npm run dev --workspace=apps/api-gateway"
+  }
+}
